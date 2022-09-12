@@ -1,0 +1,5 @@
+<div class="Container__Hotel" *ngIf="hotel">
+  <div>Название отеля: {{ hotel.label }}</div>
+  <div>Местоположение: {{ hotel.locationName }}</div>
+</div>
+<app-map [hotel]="hotel"></app-map>

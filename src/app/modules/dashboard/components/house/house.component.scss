@@ -1,0 +1,35 @@
+.GetHotel {
+  background-color: bisque;
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.NameHotel {
+  text-align: center;
+}
+
+.Container {
+  margin: 10px;
+
+  &__Name {
+    width: 490px;
+
+    &__Hotel {
+      display: flex;
+      margin: 12px;
+      border: 1px solid;
+      font-size: 14px;
+      font-family: monospace;
+
+      &__Label {
+        margin-right: 10px;
+      }
+    }
+
+    &__Hotel:hover {
+      cursor: pointer;
+    }
+  }
+}

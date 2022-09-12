@@ -1,0 +1,15 @@
+<div class="Container" *ngIf="hotelList">
+  <div class="Container__Name">
+    <div class="NameHotel">Название отеля</div>
+    <div
+      class="Container__Name__Hotel"
+      (click)="hotelInfo(hotelList[index].id)"
+      *ngFor="let hotel of hotelList; let index = index"
+    >
+      <div class="Container__Name__Hotel__Label">{{ hotel.label }}</div>
+      <div class="Container__Name__Hotel__LocatioName">
+        {{ hotel.locationName }}
+      </div>
+    </div>
+  </div>
+</div>
